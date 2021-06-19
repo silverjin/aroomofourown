@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Inconsolata', monospace;
-    background-color: #d16c00;
+    background-color: #DF7401;
   }
 
   .navigation {
@@ -36,7 +36,7 @@ body {
   ::-webkit-scrollbar-thumb {
       border-radius: 10px;
       background: transparent;
-      -webkit-box-shadow: inset 0 0 5px #DC1717;
+      -webkit-box-shadow: inset 0 0 5px #DF7401;
   }
 
   ::selection {
@@ -100,7 +100,7 @@ body {
 
   /* unvisited link */
   a:link {
-    color: #d16c00;
+    color: #DF7401;
     text-decoration: none;
     opacity: 1;
     -webkit-transition: .1s ease-in-out;
@@ -113,12 +113,12 @@ body {
 
   /* visited link */
   a:visited {
-    color: #d16c00;
+    color: #DF7401;
   }
 
   /* selected link */
   a:active {
-    color: #d16c00;
+    color: #DF7401;
   }
 
   p {
@@ -140,7 +140,7 @@ body {
     width: 100%; /* Full width */
     height: 85%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: #DC1717; /* Fallback color */
+    background-color: #DF7401; /* Fallback color */
     background-color: rgba(172, 0, 0, 0.74); /* Black w/ opacity */
   		z-index: 100;
   }
