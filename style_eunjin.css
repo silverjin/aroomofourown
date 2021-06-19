@@ -11,16 +11,17 @@
 }
 
 body {
-  font-family:'moderataserifmedium';
-    background-color: #D52494;
+  font-family: 'Inconsolata', monospace;
+    background-color: #d16c00;
   }
 
   .navigation {
-    left: 1.5%;
+    left: 2%;
     float: left;
     top: 3%;
     z-index: 100;
     position: fixed;
+    color: white;
   }
 
   ::-webkit-scrollbar {
@@ -99,7 +100,7 @@ body {
 
   /* unvisited link */
   a:link {
-    color: black;
+    color: #d16c00;
     text-decoration: none;
     opacity: 1;
     -webkit-transition: .1s ease-in-out;
@@ -112,12 +113,12 @@ body {
 
   /* visited link */
   a:visited {
-    color: black;
+    color: #d16c00;
   }
 
   /* selected link */
   a:active {
-    color: black;
+    color: #d16c00;
   }
 
   p {

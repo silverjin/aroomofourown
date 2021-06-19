@@ -15,11 +15,12 @@ body {
 }
 
 .navigation {
-  left: 1.5%;
+  left: 2%;
   float: left;
   top: 3%;
   z-index: 100;
   position: fixed;
+  color: white;
 }
 
 ::-webkit-scrollbar {

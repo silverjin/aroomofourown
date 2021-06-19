@@ -7,12 +7,13 @@ body {
   }
 
   .navigation {
-  padding-left: 20px;
-  padding-top: 20px;
-  z-index: 100;
-  position: fixed;
-  float: left;
-}
+    left: 2%;
+    float: left;
+    top: 3%;
+    z-index: 100;
+    position: fixed;
+    color: white;
+  }
 
 #cylinderText2 {
   font-size: 10pt;
