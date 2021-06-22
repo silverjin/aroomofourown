@@ -40,7 +40,7 @@ z-index: 1000;
 
 .next {
   position: absolute;
-  font-size: 60px;
+  font-size: 75px;
   font-weight: bold;
   right: 5%;
   float: right;
@@ -53,7 +53,7 @@ z-index: 1000;
 .title {
   font-family: moderataserifitalic;
     text-align: left;
-    font-size: 72pt;
+    font-size: 75pt;
     display: block;
     padding-top: 3%;
     padding-left: 4%;
@@ -89,10 +89,10 @@ a:active {
 
 p {
 font-family: moderataserifitalic;
-  font-size: 55px;
+  font-size: 60px;
   line-height: 1.4em;
   font-weight: bold;
-  width: 48%;
+  width: 45%;
   z-index: 120;
   position: absolute;
 }
