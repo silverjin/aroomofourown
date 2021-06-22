@@ -5,6 +5,7 @@
       <title>A Room of Our Own</title>
     <meta name="description" content="Hello, WebVR! • A-Frame">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
     <link rel="stylesheet" href="style_eunjin.css">
     <script>
       AFRAME.registerComponent("change-color-on-hover", {
@@ -221,6 +222,37 @@
  <a-obj-model scale="6 6 6" rotation="0 50 0" position="-15 -4 60" src="https://eunjinishere.xyz/eunjin_clothes_rack/model.obj" mtl="https://eunjinishere.xyz/eunjin_clothes_rack/model.mtl"></a-obj-model>
  <a-obj-model scale="4 4 4" rotation="0 159 0" position="20 -9 50" src="https://eunjinishere.xyz/bed/model.obj" mtl="https://eunjinishere.xyz/bed/model.mtl"></a-obj-model>
  <a-obj-model scale="2.2 2.2 2.2" rotation="0 -20 0" position="6 -14 4" src="https://aroomofourown.xyz/eunjin_hyewon/model.obj" mtl="https://aroomofourown.xyz/eunjin_hyewon/model.mtl"></a-obj-model>
+
+
+  <a-entity
+      position="8.5 -7 -29"
+      height="1"
+    event-set__enter="_event: mouseenter; _target: #eunseoVideo; visible: true"
+    event-set__leave="_event: mouseleave; _target: #eunseoVideo; visible: false"
+  >
+    <a-video
+      id="eunseoVideo"
+      autoplay
+      loop="true"
+      src="https://aroomofourown.xyz/eunjin_cake.mp4"
+      align="center"
+      scale="1.4 1 1"
+      visible="true"
+      position="-8.3 8 30"
+      rotation="0 -13 0"
+
+    ></a-box>
+
+ <a-sound
+ src="https://aroomofourown.xyz/interview_eunjin.mp3"
+ autoplay="true"
+ visible="false"
+ loop="true"
+ position="1 2 -10">
+ </a-sound>
+
+  </a-entity>
+
 
  <a-box
    color="trasparent"
