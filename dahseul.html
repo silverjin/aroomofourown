@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Rooms of Our Own</title>
+    <title>A Room of Our Own</title>
     <meta name="description" content="Hello, WebVR! • A-Frame">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <link rel="stylesheet" href="style_dahseul.css">
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+<link rel="stylesheet" href="style_dahseul.css">
     <script>
       AFRAME.registerComponent("change-color-on-hover", {
         schema: {
@@ -26,7 +27,6 @@
           var overlay7 = document.getElementById("overlay-7");
           var overlay8 = document.getElementById("overlay-8");
           var overlay9 = document.getElementById("overlay-9");
-          var overlay10 = document.getElementById("overlay-10");
           // Object  1
           var objext1 = document.getElementById("object1");
           objext1.addEventListener("mouseenter", function () {
@@ -162,21 +162,6 @@
             overlay9.style.display = "none";
           }
 
-          // Object  10
-          var objext10 = document.getElementById("object10");
-          objext10.addEventListener("mouseenter", function () {
-            showOverlay10();
-          });
-          objext10.addEventListener("mouseleave", function () {
-            hideOverlay10();
-          });
-          function showOverlay10() {
-            overlay10.style.display = "block";
-          }
-          function hideOverlay10() {
-            overlay10.style.display = "none";
-          }
-
 
 
 
@@ -187,7 +172,8 @@
   <body>
     <div class="navigation">
       <!-- Trigger/Open The Modal -->
-<img src="https://i.imgur.com/vwxTVeA.png" alt="Workplace" usemap="#workmap" width="300px">
+<img src="https://i.imgur.com/vwxTVeA.png" alt="Workplace" usemap="#workmap" width="300px"><br>
+<img src="https://i.imgur.com/PABDcr7.png">
       </div>
 
       <map name="workmap">
@@ -276,20 +262,12 @@
       <a-box
         color="trasparent"
         opacity= "0"
-        position="-1 1 -10"
+        position="8 1 -10"
         scale="3 3 3"
         change-color-on-hover="color: blue"
         id="object9"
       ></a-box>
 
-      <a-box
-        color="trasparent"
-        opacity= "0"
-        position="-1 1 -10"
-        scale="3 3 3"
-        change-color-on-hover="color: blue"
-        id="object10"
-      ></a-box>
 
 
       <a-obj-model scale="0.6 0.6 0.6" rotation="0 50 -5" position="-17 -3 -7" src="https://aroomofourown.xyz/dahseul_mirror/model.obj" mtl="https://aroomofourown.xyz/dahseul_mirror/model.mtl"></a-obj-model>
@@ -305,6 +283,236 @@
   <a-cursor></a-cursor>
 </a-camera>
 </a-scene>
+
+<div
+  id="overlay-1"
+  style="
+    display: none;
+    width: 25%;
+    position: fixed;
+    top: 3.5%;
+    right: 3.5%;
+    font-size: 16pt;
+    padding: 1.2em;
+    background: rgba(255, 255, 255, 0.84);
+    overflow-x: hidden;
+    overflow-y: scroll;
+  "
+>
+<b>What does the 'room' mean to you? Does the room in Korea and the room in here mean different to you?</b><br><br>
+<font style="color: #DC1717"
+  >
+It always changes, but now I'm thinking about going back to Korea. </font>
+  <br /><br />
+  <font style="color: #000"
+    >
+    I love the word ecosystem. In this room I can really feel the ‘ecosystem.’
+  The ecosystem is like the identity of your room. Look at all these plants.</font>
+  <br /><br />
+  <font style="color: #DC1717"
+    >
+  Haha, when I send a picture to my mom and dad they’re always tell me like
+  it’s almost like flower garden! How you will move everything when you move
+  out later? They’re already worrying.</font>
+</div>
+
+<div
+  id="overlay-2"
+  style="
+    display: none;
+    width: 25%;
+    position: fixed;
+    top: 3.5%;
+    right: 3.5%;
+    font-size: 16pt;
+    padding: 1.2em;
+    background: rgba(255, 255, 255, 0.84);
+    overflow-x: hidden;
+    overflow-y: scroll;
+  "
+>
+<font style="color: #000"
+  >
+<b>Have you ever felt like a 'family' with Korean friends in the Netherlands? Is there any episode related?</b></font><br><br>
+
+  <font style="color: #DC1717"
+    >
+    As you know, Koreans have a culture of 'Chung'. For example, there are many things that I have to ask for help at the beginning of the first time here, and Koreans really helped me at that time. You know, helping each other move in and out, partying on Korean holidays… There are families in Korea, so they can help me with anything, but there are no real families here. And my Korean friends around me are like family to me. Second, when I’m telling my friends about myself, my own story which I can’t tell to my family, I feel like we're even more intimate than our family. These people know "real me" and they like me... It’s impressive and touching. I'm actually very vague about this kind of relationship. I have a lover who's like a family, like a friend, like a partner... and the boundaries of all these relationships are very blurry to me.
+</font>
+</div>
+
+<div
+  id="overlay-3"
+  style="
+
+  display: none;
+  width: 25%;
+  position: fixed;
+  bottom: 3.5%;
+  left: 3.5%;
+  font-size: 16pt;
+  padding: 1.2em;
+  background:  rgba(243, 247, 129, 0.87);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  "
+>
+
+<font style="color: #DC1717"
+  >
+The standardized furniture in the Netherlands, with an average height of 183cm, didn't fit 155cm me at all. So there are always piles of clothes that I don't wear often in the highest compartment of the closet. That's how the dust builds up...
+</div>
+
+<div
+  id="overlay-4"
+  style="
+    display: none;
+    width: 25%;
+    position: fixed;
+    top: 3.5%;
+    right: 3.5%;
+    font-size: 16pt;
+    padding: 1.2em;
+    background: rgba(255, 255, 255, 0.84);
+    overflow-x: hidden;
+    overflow-y: scroll;
+  "
+>
+<font style="color: #000"
+  >
+<b>
+What does the 'room' mean to you? Does the room in Korea and the room in here mean different to you?
+</b></font><br><br>
+
+  <font style="color: #DC1717"
+    >
+    It's very different. In Korea, I live with my family and live in my parents' house, so I can't put my taste in that room at all. Because all the furniture is based on my parents' tastes and my parents' money. So my room in Korea feels like a warehouse attached to my parents' house. It's good to be here because I can decorate everything in my place to my taste. My place in the Netherlands feels like a real house/room to me because there are many things that I really like and there are many things that have stories.<br><br>
+  And I read somewhere that living alone is important because it's time to get to know yourself. I started living alone for the first time here, but honestly, when I was in Korea, it was hard to know my taste. I finally found out what items I like, what colors I like, and what settings are comfortable for me. And it's the place where I spend the most time, so it's important to decorate it as my favorite space to be an inspiration source for me.
+</font>
+</div>
+
+
+<div
+  id="overlay-5"
+  style="
+
+  display: none;
+  width: 25%;
+  position: fixed;
+  bottom: 3.5%;
+  left: 3.5%;
+  font-size: 16pt;
+  padding: 1.2em;
+  background:  rgba(243, 247, 129, 0.87);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  "
+>
+
+<font style="color: #DC1717"
+  >
+These are my collected art books. This part is a part I spend the most time and love in this house! I will continue to fill it up.
+</font>
+</div>
+
+<div
+  id="overlay-6"
+  style="
+
+  display: none;
+  width: 25%;
+  position: fixed;
+  bottom: 3.5%;
+  left: 3.5%;
+  font-size: 16pt;
+  padding: 1.2em;
+  background:  rgba(243, 247, 129, 0.87);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  "
+>
+
+<font style="color: #DC1717"
+  >
+  These are tableware I collected from Kringloops in The Hague for four years. If I go back to Korea, I want to bring them with me.
+</font>
+</div>
+
+<div
+  id="overlay-7"
+  style="
+    display: none;
+    width: 25%;
+    position: fixed;
+    top: 3.5%;
+    right: 3.5%;
+    font-size: 16pt;
+    padding: 1.2em;
+    background: rgba(255, 255, 255, 0.84);
+    overflow-x: hidden;
+    overflow-y: scroll;
+  "
+>
+<font style="color: #000"
+  >
+<b>
+Have you ever felt unwelcome as a foreigner or a stranger?
+</b></font><br><br>
+
+  <font style="color: #DC1717"
+    >
+    I definitely felt that way in the early days when I just got here. But I think I'm getting close to the people around me and getting used to it, so it’s very hard to feel it these days. I still remember the day I went house-viewing when I just came here. At that time, a lot of students including me came and everyone except me was dutch. And it seemed like the landlord was looking for a new tenant in his house. But, of course, I felt like I was excluded. He didn't ask me any questions and just treated me like I wasn't there. This was the viewing that the housing agency hosted, and I've been around the same neighborhood and I’ve seen seven to eight houses since then, but all of them didn’t care about me. Of all the houses, I don't feel like there's a house in which I can fit. That's what I experienced not long after I came here from Korea, and since it was such a strong memory I still have that shocking feeling. You know, feeling unrealistic?
+  </font>
+</div>
+
+<div
+  id="overlay-8"
+  style="
+    display: none;
+    width: 25%;
+    position: fixed;
+    top: 3.5%;
+    right: 3.5%;
+    font-size: 16pt;
+    padding: 1.2em;
+    background: rgba(255, 255, 255, 0.84);
+    overflow-x: hidden;
+    overflow-y: scroll;
+  "
+>
+<font style="color: #000"
+  >
+<b>
+Do you feel that your life as a queer has changed since you came to the Netherlands? What is the difference between life as a queer in Korea?
+</b></font><br><br>
+
+  <font style="color: #DC1717"
+    >
+I don’t talk to people first but when the other person asks, I don’t hide my identity as a queer. But in Korea, it's hard to talk even though they are people I can speak comfortably with and I feel closer to my heart. And in Korea, if I am a woman, people often ask if I have a boyfriend from the first meeting. Just because I'm a woman… What if I'm a lesbian or something? People in here don’t ask or guess that. For me that's the difference between Korea and here and I'm so comfortable with that.
+  </font>
+</div>
+
+<div
+  id="overlay-9"
+  style="
+
+  display: none;
+  width: 25%;
+  position: fixed;
+  bottom: 3.5%;
+  left: 3.5%;
+  font-size: 16pt;
+  padding: 1.2em;
+  background:  rgba(243, 247, 129, 0.87);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  "
+>
+
+<font style="color: #DC1717"
+  >
+Whenever I see the bed, I just want to lie down, so I put a hanger in front of my desk to block my vision.</font>
+</div>
 
 
   </body>
