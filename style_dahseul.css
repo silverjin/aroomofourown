@@ -99,7 +99,7 @@ a {
 
 /* unvisited link */
 a:link {
-  color: black;
+  color: #666;
   text-decoration: none;
   opacity: 1;
   -webkit-transition: .1s ease-in-out;
@@ -112,12 +112,12 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: black;
+  color: #666;
 }
 
 /* selected link */
 a:active {
-  color: black;
+  color: #666;
 }
 
 p {
